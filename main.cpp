@@ -229,7 +229,7 @@ public:
             {
                 inputFile.close();
                 ofstream outputFile("users.json");
-                outputFile << "[]"; // Initialize with an empty JSON array
+                outputFile << "[]"; 
                 outputFile.close();
                 return false;
             }
@@ -273,7 +273,7 @@ public:
         data.push_back(newUser);
 
         ofstream outputFile(filePath);
-        outputFile << data.dump(4); // Indented with 4 spaces for readability
+        outputFile << data.dump(4); 
         outputFile.close();
 
         cout << GREEN << "User details saved to JSON file." << RESET << "\n";
@@ -375,7 +375,7 @@ public:
             cout << setw(2) << i + 1 << ". " << categories[i] << "\n";
         }
 
-        // Get valid category input
+       
         do
         {
             cout << BLUE << "\nEnter category number (1-" << categories.size() << "): " << RESET;
@@ -387,9 +387,8 @@ public:
             }
         } while (categoryIndex < 1 || categoryIndex > categories.size());
 
-        string category = categories[categoryIndex - 1]; // Selected category
-
-        cin.ignore(); // Clear input buffer
+        string category = categories[categoryIndex - 1];
+        cin.ignore();
 
         cout << BLUE << string(width, '-') << RESET << "\n";
         cout << GREEN << "Enter expense date (YYYY-MM-DD): " << RESET;
@@ -415,13 +414,13 @@ public:
             }
         } while (paymentMode < 1 || paymentMode > 2);
 
-        cin.ignore(); // Clear input buffer
+        cin.ignore();
 
         cout << BLUE << string(width, '-') << RESET << "\n";
         cout << GREEN << "Enter notes (Press Enter to skip): " << RESET;
         getline(cin, notes);
 
-        // Save to expenses JSON file
+        
         string filePath = "expenses.json";
         ifstream inputFile(filePath);
         json expenses;
@@ -445,7 +444,7 @@ public:
         expenses.push_back(newExpense);
 
         ofstream outputFile(filePath);
-        outputFile << expenses.dump(4); // Indented with 4 spaces for readability
+        outputFile << expenses.dump(4); 
         outputFile.close();
 
         cout << BLUE << string(width, '-') << RESET << "\n";
@@ -474,7 +473,7 @@ public:
                 {
                     expensesFound = true;
 
-                    // Print a border for each expense
+                    
                     cout << border << "\n";
 
                     cout << BLUE << "| " << RESET << setw(width - 2) << " " << BLUE << "|\n";
@@ -486,7 +485,7 @@ public:
                     cout << BLUE << "| " << GREEN << "Place: " << RESET << CYAN << expense["place"] << setw(width - 2 - 18) << " " << BLUE << "|\n";
                     cout << BLUE << "| " << GREEN << "Payment Mode: " << RESET << CYAN << expense["paymentMode"] << setw(width - 2 - 25) << " " << BLUE << "|\n";
 
-                    // Check for optional notes and display them
+                   
                     if (expense.contains("notes") && !expense["notes"].empty())
                     {
                         cout << BLUE << "| " << GREEN << "Notes: " << RESET << CYAN << expense["notes"] << setw(width - 2 - 18) << " " << BLUE << "|\n";
@@ -545,12 +544,12 @@ public:
                 double amount = expense["amount"];
                 string category = expense["category"];
                 string date = expense["date"];    // Format YYYY-MM-DD
-                string month = date.substr(0, 7); // Extract YYYY-MM for monthly breakdown
+                string month = date.substr(0, 7); 
 
                 totalExpenses += amount;
                 totalExpensesCount++;
 
-                // Total by category
+            
                 categoryTotals[category] += amount;
                 categoryCounts[category]++;
 
@@ -714,9 +713,9 @@ public:
 
         if (found)
         {
-            // Write the updated list back to the file
+           
             ofstream outputFile("expenses.json");
-            outputFile << updatedExpenses.dump(4); // Indented with 4 spaces for readability
+            outputFile << updatedExpenses.dump(4); 
             outputFile.close();
 
             cout << GREEN << "Expense deleted successfully with id" << id << RESET << "\n";
@@ -765,7 +764,7 @@ public:
 
                 cout << "Enter new expense amount (Rs.): ";
                 cin >> amount;
-                cin.ignore(); // Clear input buffer
+                cin.ignore(); 
 
                 cout << "Enter new expense category: ";
                 getline(cin, category);
@@ -787,12 +786,12 @@ public:
                         cout << "Please select 1 or 2 only.\n";
                     }
                 } while (paymentMode < 1 || paymentMode > 2);
-                cin.ignore(); // Clear input buffer
+                cin.ignore();
 
                 cout << "Enter new notes (Press enter to skip): ";
                 getline(cin, notes);
 
-                // Update the expense details
+               
                 expense["amount"] = amount;
                 expense["category"] = category;
                 expense["date"] = date;
@@ -800,15 +799,15 @@ public:
                 expense["paymentMode"] = (paymentMode == 1) ? "Online" : "Cash (Offline)";
                 expense["notes"] = notes;
 
-                break; // Exit the loop once the expense is found and updated
+                break; 
             }
         }
 
         if (found)
         {
-            // Save the updated expenses back to the file
+           
             ofstream outputFile("expenses.json");
-            outputFile << expenses.dump(4); // Indented with 4 spaces for readability
+            outputFile << expenses.dump(4); 
             outputFile.close();
 
             cout << GREEN << "Expense updated successfully." << RESET << "\n";
