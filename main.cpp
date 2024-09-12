@@ -17,7 +17,7 @@ const string BLUE = "\033[34m";
 const string CYAN = "\033[36m";
 const string BOLD = "\033[1m";
 
-// Function to print a box with menu options
+
 string getUserName(const long long &phone)
 {
     ifstream inputFile("users.json");
@@ -354,7 +354,6 @@ public:
         int categoryIndex, paymentMode;
         string date, place, notes;
 
-        // Array of standard categories
         vector<string> categories = {
             "Food & Dining", "Groceries", "Utilities", "Rent/Mortgage",
             "Transportation", "Health & Medical", "Entertainment", "Insurance",
