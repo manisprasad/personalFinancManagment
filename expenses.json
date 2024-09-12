@@ -1,0 +1,202 @@
+[
+    {
+        "_id": "8b5e09d8-ff2a-458b-b419-559302ef0ac7",
+        "amount": 3493.0,
+        "category": "Education",
+        "date": "2023-12-11",
+        "notes": "for education",
+        "paymentMode": "Cash",
+        "phoneNumber": 1234567890,
+        "place": "New Delhi"
+    },
+    {
+        "_id": "b4e5c29d-eccf-4979-908f-946a2b14bfe5",
+        "amount": 500.0,
+        "category": "Groceries",
+        "date": "2023-11-30",
+        "notes": "",
+        "paymentMode": "Online",
+        "phoneNumber": 1234567890,
+        "place": "Mumbai"
+    },
+    {
+        "_id": "fe36bce1-8a13-44e1-8fd3-d59eb548912f",
+        "amount": 1200.0,
+        "category": "Rent",
+        "date": "2023-11-25",
+        "notes": "monthly rent",
+        "paymentMode": "Online",
+        "phoneNumber": 1234567890,
+        "place": "Bangalore"
+    },
+    {
+        "_id": "96ff4f23-2e67-4c91-8735-fd15760433da",
+        "amount": 150.0,
+        "category": "Transport",
+        "date": "2023-11-15",
+        "notes": "bus fare",
+        "paymentMode": "Cash",
+        "phoneNumber": 1234567890,
+        "place": "Chennai"
+    },
+    {
+        "_id": "ca2f10a2-2387-43d8-9f4a-5478faed79da",
+        "amount": 750.0,
+        "category": "Dining",
+        "date": "2023-11-10",
+        "notes": "dinner with friends",
+        "paymentMode": "Online",
+        "phoneNumber": 1234567890,
+        "place": "Hyderabad"
+    },
+    {
+        "_id": "d9f7b49f-456d-472e-8c36-0b3485fbd9f1",
+        "amount": 2000.0,
+        "category": "Shopping",
+        "date": "2023-10-29",
+        "notes": "new clothes",
+        "paymentMode": "Cash",
+        "phoneNumber": 1234567890,
+        "place": "Pune"
+    },
+    {
+        "_id": "af73d019-bb4b-465e-97f9-674a7a2287e2",
+        "amount": 100.0,
+        "category": "Snacks",
+        "date": "2023-10-28",
+        "notes": "evening snacks",
+        "paymentMode": "Online",
+        "phoneNumber": 1234567890,
+        "place": "Kolkata"
+    },
+    {
+        "_id": "2ed37b2c-8d90-4bc9-99fb-e1d617a3e155",
+        "amount": 550.0,
+        "category": "Entertainment",
+        "date": "2023-10-25",
+        "notes": "movie ticket",
+        "paymentMode": "Cash",
+        "phoneNumber": 1234567890,
+        "place": "Jaipur"
+    },
+    {
+        "_id": "abc462ff-9391-4e1c-9c43-dabf89ef3e0a",
+        "amount": 180.0,
+        "category": "Utilities",
+        "date": "2023-10-20",
+        "notes": "electricity bill",
+        "paymentMode": "Online",
+        "phoneNumber": 1234567890,
+        "place": "Lucknow"
+    },
+    {
+        "_id": "b3a8d9b0-31f5-4eb9-822e-1b7698abec48",
+        "amount": 6500.0,
+        "category": "Travel",
+        "date": "2023-10-18",
+        "notes": "flight tickets",
+        "paymentMode": "Online",
+        "phoneNumber": 1234567899,
+        "place": "Goa"
+    },
+    {
+        "_id": "c45d71bc-7b2f-4a0d-b09b-2f8140dbb2ff",
+        "amount": 300.0,
+        "category": "Health",
+        "date": "2023-10-15",
+        "notes": "doctor visit",
+        "paymentMode": "Cash",
+        "phoneNumber": 1234567890,
+        "place": "Surat"
+    },
+    {
+        "_id": "f04d4db2-65e7-4b75-8b9d-3b6726c1a03b",
+        "amount": 100.0,
+        "category": "Transport",
+        "date": "2023-10-12",
+        "notes": "auto fare",
+        "paymentMode": "Online",
+        "phoneNumber": 1234567890,
+        "place": "Delhi"
+    },
+    {
+        "_id": "e76b4727-2b3f-4eb6-bd0d-021928b5bb2b",
+        "amount": 1200.0,
+        "category": "Groceries",
+        "date": "2023-10-08",
+        "notes": "monthly groceries",
+        "paymentMode": "Cash",
+        "phoneNumber": 1234567890,
+        "place": "Gurgaon"
+    },
+    {
+        "_id": "9f12cb9c-98b5-4688-bd8b-353b9d54a578",
+        "amount": 250.0,
+        "category": "Utilities",
+        "date": "2023-10-05",
+        "notes": "water bill",
+        "paymentMode": "Online",
+        "phoneNumber": 1234567890,
+        "place": "Ahmedabad"
+    },
+    {
+        "_id": "db612f50-92fe-418a-82b6-9f97f34b727a",
+        "amount": 450.0,
+        "category": "Dining",
+        "date": "2023-10-03",
+        "notes": "lunch with family",
+        "paymentMode": "Cash",
+        "phoneNumber": 1234567890,
+        "place": "Chandigarh"
+    },
+    {
+        "_id": "ad5bfaed-e961-4ccf-9d65-2a0b526da836",
+        "amount": 1800.0,
+        "category": "Shopping",
+        "date": "2023-09-30",
+        "notes": "new shoes",
+        "paymentMode": "Online",
+        "phoneNumber": 1234567890,
+        "place": "Bhopal"
+    },
+    {
+        "_id": "9a36d827-c6f8-41d9-a56f-df648c1b2ecb",
+        "amount": 2200.0,
+        "category": "Education",
+        "date": "2023-09-25",
+        "notes": "books and study material",
+        "paymentMode": "Cash",
+        "phoneNumber": 1234567890,
+        "place": "Patna"
+    },
+    {
+        "_id": "7d1526b4-091f-470e-9bb9-457f814c1c88",
+        "amount": 90.0,
+        "category": "Snacks",
+        "date": "2023-09-23",
+        "notes": "evening tea",
+        "paymentMode": "Cash",
+        "phoneNumber": 1234567890,
+        "place": "Nagpur"
+    },
+    {
+        "_id": "5a152b12-c826-47e0-9c41-8e34f1d0e7b8",
+        "amount": 950.0,
+        "category": "Health",
+        "date": "2023-09-20",
+        "notes": "medicine",
+        "paymentMode": "Online",
+        "phoneNumber": 1234567890,
+        "place": "Vishakhapatnam"
+    },
+    {
+        "_id": "c235fc12-642d-4cb1-b6f5-81494e40fd35",
+        "amount": 300.0,
+        "category": "Travel",
+        "date": "2023-09-15",
+        "notes": "train fare",
+        "paymentMode": "Cash",
+        "phoneNumber": 1234567890,
+        "place": "Coimbatore"
+    }
+]
